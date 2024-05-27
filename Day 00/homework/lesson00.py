@@ -11,7 +11,7 @@ def draw_square(x, y, penwidth, pencolor):
         forward(200)
         left(90)
 
-def draw_door(x, y, penwidth, pencolor):
+def draw_door(x, y, penwidth, pencolor, doorwidth, doorlength):
     pensize(penwidth)
     color(pencolor)
     penup()
@@ -20,12 +20,16 @@ def draw_door(x, y, penwidth, pencolor):
     pendown()
 
     begin_fill()
-    left(90)
-    forward(100)
-    right(90)
-    forward(60)
-    right(90)
-    forward(100)
+
+    op = [doorlength, doorwidth, doorlength]
+    for i in op :
+
+
+        left(90)
+        forward(i)
+
+        print(i)
+
     end_fill()
 
 def draw_roof(x, y, penwidth, pencolor):
@@ -57,7 +61,7 @@ def draw_window(x, y, penwidth, pencolor):
 
 
 draw_square(0, 0, 5, "black")
-draw_door(70, 0, 5, "black")
+draw_door(130, 0, 5, "black", 60, 100)
 draw_roof(200, 200, 5, "black")
 left(45)
 draw_window(175, 125, 5 , "black")
