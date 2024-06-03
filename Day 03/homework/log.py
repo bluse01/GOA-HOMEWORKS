@@ -1,3 +1,10 @@
+"""
+The assignment:
+4)გავაკეთოთ სიმულაცია სადაც მომხმარებელს შეეძლება რეგისტრაცია, 
+მომხმარებელი შემოიტანს 3 ცვლადს, სახელი, გვარი, 
+ასაკი (int ფუნქცია არ არის სავალდებულო ასაკთან) საბოლოოდ ამ ყველაფერს print'ის მეშვეობით გამოიტანთ ტერმინალში
+"""
+
 import os
 
 class user:
@@ -16,11 +23,13 @@ def string_check(string):
         print("String is empty")
         exit()
 
+# saves user data to data.txt
 def save_user(username, password):
     data = open("data.txt","a+")
     data.write(f"{username},{password}\n")
     data.close()
 
+# checks if user exists in data.txt
 def verify_user(username, password):
     data = open("data.txt","r")
 
@@ -33,6 +42,7 @@ def verify_user(username, password):
     data.close()      
     return False
 
+# the func called to insert userinfo in data.txt
 def sign_in():
     os.system("cls")
     print("\nPlease Sign in")
@@ -50,6 +60,7 @@ def sign_in():
     save_user(username, userpassword)
     print("User signed in successfully")
 
+# the func that saves inputed data and check if it exists with verify_user
 def log_in():
     os.system("cls")
     print("\nPlease Login in")
@@ -73,6 +84,5 @@ def main():
             log_in()
         case _:
             print("Invalid input")
-        
-    
+           
 main()
