@@ -18,7 +18,7 @@ def string_check(string):
         exit()
     
     if string.strip():
-        None
+        pass
     else:
         print("String is empty")
         exit()
