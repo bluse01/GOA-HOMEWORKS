@@ -60,7 +60,7 @@ def sign_in():
     save_user(username, userpassword)
     print("User signed in successfully")
 
-# the func that saves inputed data and check if it exists with verify_user
+# the func that saves input data and check if it exists with verify_user
 def log_in():
     os.system("cls")
     print("\nPlease Login in")
