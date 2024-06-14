@@ -1,4 +1,5 @@
 from turtle import *
+import turtle
 
 def draw_cage(check, length, ps, color, for_tower = False):
     pencolor(color)
@@ -123,11 +124,10 @@ def draw_brick(x, y, ps, pencolor, fill_color, width, height):
         right(90)
     end_fill()
 
-# I am pretty proud of this func
 def draw_texture(x_coords, y_coords):
 
-    brick_width = 30
-    brick_height = 15
+    brick_width = 32
+    brick_height = 17
 
     x_min, x_max = x_coords
     y_min, y_max = y_coords
@@ -143,7 +143,52 @@ def draw_texture(x_coords, y_coords):
             
             draw_brick(x, y, 1, "black", "gray", brick_width, brick_height)
 
+def draw_flag(x, y, ps, color):
+    pencolor(color)
+    pensize(ps)
+    penup()
+    setx(x)
+    sety(y)
+    pendown()
+
+    fillcolor("black")
+
+    flag_witdh = 100
+    flag_height = 60
+
+    # Main Flag height
+    left(90)
+    forward(100)
+
+    begin_fill()
+    # Flag width
+    right(90)
+    forward(flag_witdh)
+
+    # Flag Height
+    left(90)
+    forward(flag_height)
+
+    # Flag width
+    left(90)
+    forward(flag_witdh)
+
+    # Flag Height
+    left(90)
+    forward(flag_height)
+    end_fill()
+
+def draw_text(x, y, color,text):
+    penup()
+    setx(x)
+    sety(y)
+    pendown()
+    pencolor(color)
+
+    turtle.write(text, align="center", font=("Arial", 22, "normal"))
+
 setup(width=1200, height=800)
+title("Castle")
 speed(0)
 draw_floor(0, -300, 3, "gray")
 draw_watchtower(-500, -300, 3, "black", "right", True)
@@ -152,7 +197,10 @@ draw_watchtower(500, -300, 3, "black", "left", True)
 draw_base(-365, -50, 3, "black")
 draw_gate([(-70, -300),(70, -300)] , 3, "black")
 left(90)
-draw_texture([-495, -360], [-300, 130])
-draw_texture([370, 505], [-300, 130])
+draw_texture([-497, -360], [-300, 130])
+draw_texture([368, 503], [-300, 130])
+draw_flag(-433, 150, 3, "black")
+draw_text(-385, 265, "dark green", "GOA")
+turtle.hideturtle()
 
 mainloop()
