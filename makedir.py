@@ -1,7 +1,8 @@
 import os
 
+path = "C:/Users/Pulling 11 g s/source/repos/GOA_HOMEWORK"
+
 def dirlist():
-    path = "C:/Users/Pulling 11 g s/Desktop/Test"
 
     dir_list = os.listdir(path)
     filter_dir = []
@@ -31,7 +32,7 @@ def makedir():
         new_num = int(num2) + 1
         new_num = str(num1) + str(new_num)
         new_string = prefix + new_num
-        new_path = f"C:/Users/Pulling 11 g s/Desktop/Test/{new_string}"
+        new_path = f"{path}/{new_string}"
 
         if not os.path.exists(new_path):
             os.makedirs(new_path)
@@ -41,7 +42,7 @@ def makedir():
     def high_dir():
         new_num = int(num) + 1
         new_string = prefix + " " + str(new_num)
-        new_path = f"C:/Users/Pulling 11 g s/Desktop/Test/{new_string}"
+        new_path = f"{path}/{new_string}"
         
         if not os.path.exists(new_path):
             os.makedirs(new_path)
