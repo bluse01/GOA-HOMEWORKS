@@ -7,6 +7,6 @@ def main():
         main_list.append(i)
 
     print(main_list)
-    print("Lagers num in the list: " + str(main_list[-1]))
+    print("Largest num in the list: " + str(main_list[-1]))
 
 main()
