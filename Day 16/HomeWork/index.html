@@ -3,29 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation</title>
+    <title>My page</title>
+
+    <link rel="stylesheet" href="stlyes.css">
 </head>
 <body>
     <header>
-        <h1>this is a h1 tag in header</h1>
-        <p>this is a p that in header</p>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html" class="text-link">Home</a></li>
+                <li><a href="index.html" class="text-link">Menu</a></li>
+                <li class="logo"><a href="index.html">image</a></li>
+                <li><a href="index.html" class="text-link">Locations</a></li>
+                <li><a href="index.html" class="text-link">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <h2>this is a h2 tag in main</h2>
-        <p>this is a p tag in main</p>
-    </main>
+    <section class="fetures-prodact">
+        <figure>
+            <img src="Images/Product-1.jpg" alt="Best coffee img product 1">
+            <div>
+                <figcaption>Espresso</figcaption>
+                <button type="button">Buy</button>
+            </div>
+        </figure>
 
-    <section>
-        <h3>this is a h3 tag in section</h3>
-        <nav>
-            <p>this is a p tag in (section nav)</p>
-        </nav>
+        <figure>
+            <img src="Images/Product-2.jpg" alt="Best coffee img product 2">
+            <div>
+                <figcaption>Cappucino</figcaption>
+                <button type="button">Buy</button>
+            </div>
+        </figure>
+
+        <figure>
+            <img src="Images/Product-3.jpg" alt="Best Cookies img product 3">
+            <div>
+                <figcaption>Cookies</figcaption>
+                <button type="button">Buy</button>
+            </div>
+        </figure>
     </section>
 
     <footer>
-        <h4>this is a h4 tag in footer</h4>
-        <p>this is a p tag in footer</p>
+        <div class="video">
+            <video src="Images/coffee-shop-promo-simple-photo.mp4" width="740" height="540" controls></video>
+        </div>
     </footer>
 </body>
 </html>
