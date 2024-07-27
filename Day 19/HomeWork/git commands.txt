@@ -1,0 +1,19 @@
+git init: Initializes a new Git repository in your current directory. It sets up all the necessary files and directories for Git to start tracking your project.
+
+git push: Uploads your local repository changes to a remote repository (like GitHub). It's how you share your work with others or back it up.
+
+git commit: Records changes to the repository. It's like taking a snapshot of your project at a specific point in time. You'll usually add a message to describe the changes.
+
+git add: Adds changes in your working directory to the staging area, preparing them to be committed. You can add specific files or all changes.
+
+git status: Shows the current status of your repository, including which changes are staged for commit, which aren't, and if there are any files not being tracked.
+
+git merge: Combines changes from one branch into another. It's used to integrate different lines of development.
+
+git pull: Fetches and integrates changes from a remote repository into your current branch. It's like combining git fetch and git merge.
+
+git clone: Creates a copy of an existing remote repository on your local machine. It's used to download a repository for the first time.
+
+git branch: Manages branches in your repository. You can create, list, rename, and delete branches.
+
+git checkout: Switches between branches or restores working tree files. It's used to move to different points in your project's history or work on different features.
