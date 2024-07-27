@@ -1,0 +1,102 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+
+header {
+    background: rgba(0, 0, 0, 0.904);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+
+    height: 150px;
+}
+
+nav {
+    /* Was taking my screen don't know why */
+    height: 0;
+}
+
+nav ul{
+    list-style-type: none;  
+
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    font-size: 18px;
+
+    padding: 0;
+    margin: 20px 20px 0 0;
+}
+
+header h1 {
+    font-size: 50px;
+
+    margin: 0;
+    padding: 0;
+}
+
+nav ul p:hover {
+    color: rgb(161, 230, 144);
+    cursor: pointer;
+}
+
+/* header */
+
+/* Section */
+
+section {
+    background: rgba(0, 0, 0, 0.904);
+    color: white;
+
+    height: 301px;
+}
+
+section h2 {
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+    padding: 10px;
+}
+
+section p {
+
+
+    font-size: 20px;
+    
+    margin: 0;
+    padding: 10px;
+}
+
+/* Section */
+
+/* footer */
+footer {
+    background: rgb(0, 99, 0);
+    color: white;
+
+    height: 500px;
+}
+
+.main-text p{
+    font-size: 19px;
+
+    margin: 12px;
+    padding: 0;
+}
+
+.main-text h3{
+
+    margin: 0;
+    padding: 10px;
+}
+/* footer */
