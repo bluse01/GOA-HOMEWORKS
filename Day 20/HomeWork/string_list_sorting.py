@@ -1,4 +1,5 @@
-
+# simple list sorting algorithm 
+# just added len() in if statement so it can check lens of the actual string
 def sort(lst):
 
     for i in range(0, len(lst)):
