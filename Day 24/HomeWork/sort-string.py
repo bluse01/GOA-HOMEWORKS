@@ -1,4 +1,4 @@
-
+# simple sorting algorithm
 def sort_ls(lst):    
     for i in range(0, len(lst)):
         for j in range(i + 1, len(lst)):
