@@ -1,0 +1,16 @@
+.box {
+    /* width: Sets the width of the element */
+    width: 200px;
+
+    /* height: Sets the height of the element */
+    height: 100px;
+
+    /* margin: Adds space around the element outside its border */
+    margin: 20px;
+
+    /* padding: Adds space inside the element, between the content and the border */
+    padding: 10px;
+
+    /* border: Adds a border around the element */
+    border: 2px solid black;
+}
