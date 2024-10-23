@@ -1,0 +1,176 @@
+
+body {
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+
+    overflow: hidden;
+
+    font-family: IBM Plex Mono, Noto Sans Mono Variable, Noto Sans Mono, monospace;;
+}
+
+
+.container {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+
+    background-color: #111110;
+}
+
+.main-frame {
+    height: 100%;
+    width: 95.5%;
+    box-sizing: border-box;
+
+    position: absolute;
+    right: 0;
+
+    border-radius: 12px 0 0 12px;
+
+    background-color: #000101;
+}
+
+.hero-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+/* nav bar design */
+.navbar {
+    position: absolute;
+    left: 0;
+
+    height: 100%;
+    width: 4.5%;
+
+    min-width: 80px;
+    max-width: 150px;
+
+    background-color: #111110;
+
+    gap: 3px;
+}
+
+.sidebar-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 90%;
+}
+
+nav header svg {
+    padding: 10px 0 10px 3px;
+}
+
+nav .sidebar-action,.sidebar-mix,header {
+    margin: 0;
+    padding: 0;
+
+    width: auto;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar-action,.sidebar-mix {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-mix {
+    gap: 0.7em;
+}
+
+a {
+    text-align: center;
+    color: #928f8f;
+
+    margin: 5px;
+
+    text-decoration: none;
+
+    transition: all 300ms ease-in-out;
+}
+
+nav p {
+    margin: 0;
+    padding: 0;
+
+    padding: 0 0 0 0.4px;
+
+    font-size: small;
+}
+
+a:hover {
+    background-color: #616161;
+    color: white;
+
+    border-radius: 10px;
+}
+/* nav bar design */
+
+/* media query for 600px or less */
+@media (max-width: 600px) {
+    .navbar {
+        position: absolute;
+        bottom: 0;
+
+        width: 100%;
+        height: 6.5%;
+        min-width: unset;
+        max-width: unset;
+
+        flex-direction: row;
+
+    }
+
+    .main-frame {
+        position: absolute;
+        top: 0;
+
+        border-radius: 0 0 15px 15px;
+
+        width: 100%;
+        height: 93.5%;
+    }
+
+    .sidebar-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: unset;
+        height: auto;
+
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+    }
+    
+
+
+    nav header svg {
+        display: none;
+    }
+
+    nav .sidebar-action,.sidebar-mix {
+
+        flex-direction: row;
+    }
+
+    nav a {
+        width: 64px;
+        height: auto;
+    }
+}
