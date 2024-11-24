@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #ffb079;
+    --ascent-color: #253440;
+    --text-color: #62707c;
+
+    --parent-width: 400px;
+    --parent-height: 650px;
+}
+
+body {
+    height: 100vh;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: var(--primary-color);
+}
+
+main {
+    width: var(--parent-width);
+    height: var(--parent-height);
+
+    background-color: var(--ascent-color);
+
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.display-cont {
+    background-color: inherit;
+    width: 307px;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+.display {
+    background-color: inherit;
+
+    color: white;
+    font-size: 3rem;
+
+    overflow: hidden;
+
+    border: none;
+
+    text-align: end;
+
+    width: 100%;
+    height: 100%;
+}
+
+.display:focus {
+    outline: none;
+}
+
+.main-cont {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button-cont {
+    background-color: inherit;
+    width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 13px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 13px;
+}
+
+.button-cont button {
+    width: 67px;
+    height: 67px;
+
+    border-radius: 5px;
+
+    box-shadow: 3px 4px 1px #1c2a38;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1c2a38;
+
+    color: var(--text-color);
+
+    background-color: var(--ascent-color);
+
+    font-size: 21px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    cursor: pointer;
+}
+
+.button-cont button:hover {
+    transition: .1s ease-in-out;
+    background-color: hsl(207, 27%, 25%);
+}
+
+.button-cont button:active {
+    background-color: hsl(207, 27%, 35%);
+}
+
+#action {
+    width: 147px;
+    background-color: var(--primary-color);
+
+    color: white;
+}
